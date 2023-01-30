@@ -4,6 +4,7 @@ const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
 const jwtSecret = "mysecret";
+const saltRounds = 10;
 
 // REGISTER
 const register = async (req, res) => {

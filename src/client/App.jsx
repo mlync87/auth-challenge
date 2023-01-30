@@ -45,7 +45,7 @@ function App() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: LocalStorage.getItem("user"),
+        Authorization: localStorage.getItem("user"),
       },
       body: JSON.stringify({ title, description, runtimeMins }),
     });
